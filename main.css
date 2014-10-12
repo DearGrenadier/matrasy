@@ -1,0 +1,617 @@
+@import url(http://fonts.googleapis.com/css?family=Arimo&subset=latin,cyrillic);
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #f8f8f8;
+}
+header, .content-wrap{
+	width: 1220px;
+}
+
+header {
+	height: 100px;
+	margin: auto;
+	background: #fff;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
+#nav-wrap {
+	width:auto;
+	height:100%;
+	float:left;
+}
+
+nav {
+	width: 515px;
+	height: 30px;
+	float: left;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav ul li {
+	width: 100px;
+	display: inline;
+}
+
+nav ul li a {
+	text-decoration: none;
+	padding: 7px 6px;
+	font-family : 'Arimo', 'Open sans';
+	color:#555;
+	font-size: 15px;
+	line-height: 30px;
+}
+
+nav ul li a:hover {
+	border-bottom: 3px solid #555;
+}
+#search {
+	width: 220px;
+	height: 30px;
+	float: right;
+	margin-top: 24px;
+}
+#search input
+{
+	margin-top: 4px; 
+	height: 20px;
+	width:150px;
+	border: 1px solid #bebebe;
+	float: right;
+	outline: none;
+	font-family : 'Arimo', 'Open sans';
+	color:#bebebe;
+	font-size: 12px;
+	padding: 0 5px;
+	line-height: 20px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+#search-but {
+	width:auto;
+	height: 20px;
+	border-bottom: 1px solid #bebebe;
+	border-top: 1px solid #bebebe;
+	border-right: 1px solid #bebebe;
+	float: right;
+	margin-top: 4px;
+	background: #f3f3f3;
+	font-family : 'Arimo','Open sans' ,sans-serif;
+	color:#555;
+	font-size: 14px;
+	line-height: 20px;
+	cursor: pointer;
+	text-align: center;
+	padding: 0 5px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+#logo {
+	height: 100%;
+	width:240px;
+	float:left;
+	line-height: 100px;
+	text-align: center;
+	font-family : 'Arimo','Open sans' ,sans-serif;
+	color:#555;
+	font-size: 40px;
+	font-weight: bold;
+}
+#cart-wrap{
+	height: 100%;
+	width:240px;
+	float:left;
+}
+#cart {
+	width: 200px;
+	height: 80px;
+	margin-left: 31px;
+	border-radius: 3px;
+	margin-top:19px;
+	position: relative;
+}
+#cart img {
+	width: 35px;
+	height: 35px;
+	margin: 10px 0 0 10px;
+	float: left;
+}
+.product-counter {
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	background: rgba(255,0,0,1);
+	top:7px;
+	left:32px;
+	line-height: 16px;
+	color:#fff;
+	text-align: center;
+	font-family : 'Open sans';
+	font-size: 12px;
+	font-weight: bold;
+}
+.order-but {
+	display: block;
+	width:auto;
+	height:30px;
+	padding: 0 5px;
+	border: 1px solid #bebebe;
+	background: #f3f3f3;
+	margin: 10px 0 0 10px;
+	text-align: center;
+	line-height: 30px;
+	font-family : 'Open sans', sans-serif;
+	color:#555;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 3px;
+	float:left;
+}
+.clear-cart {
+	width: 220px;
+	height:30px;
+	margin-left: 20px;
+	font-family :'Open sans' ,sans-serif;
+	color:#555;
+	font-size: 13px;
+	line-height: 30px;
+	cursor: pointer;
+	text-align: right;
+	text-decoration: underline;
+}
+.clear-cart:hover {
+	text-decoration: none;
+	color: #bebebe;
+}
+#info {
+	height: 70px;
+	width:100%;
+}
+#phones {
+	height: 50px;
+	width:300px;
+	float:left;
+	margin-top: 20px;
+}
+#phones span {
+	font-family : 'Arimo', 'Open sans';
+	color:#222;
+	font-size: 14px;
+	font-weight: normal;
+	padding: 0 8px;
+}
+#zakaz {
+	width: 220px;
+	height:30px;
+	float: right;
+	font-family :'Open sans' ,sans-serif;
+	color:#555;
+	font-size: 16px;
+	line-height: 30px;
+	cursor: pointer;
+	text-align: right;
+	text-decoration: underline;
+}
+#zakaz:hover{
+	text-decoration: none;
+	color: #bebebe;	
+}
+.content-wrap {
+	height: 1000px;
+	margin: auto;
+}
+
+#filter {
+	width :18%;
+	min-height:500px;
+	margin:20px 0 0 10px;
+	background: #fff;
+	border: 1px solid #ddd;
+	float: left;
+}
+
+#sort{
+	width: 734px; 
+	height: 40px;
+	margin:20px 0 0 10px;
+	background: #fff;
+	border: 1px solid #ddd;
+	float: left;
+}
+#sort form {
+	display: block;
+	width:400px;
+	height: 100%;
+	float:left;
+}
+#sort form span {
+	line-height: 40px;
+	margin-left: 10px;
+	text-align: left;
+	font-family : 'Open sans';
+	color:#555;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 0 12px;
+}
+
+#sort form select {
+	font-family : 'Arimo', 'Open sans';
+	color:#555;
+	font-size: 14px;
+	font-weight: normal;
+	border-radius:3px;
+	border: 1px solid #bebebe;
+
+}
+
+#sort img {
+	width: 20px;
+	height: 20px;
+	cursor:pointer;
+	margin-top: 10px;
+	float:right;
+	margin-right:10px;
+}
+
+#catalog {
+	width: 60%; 
+	min-height: 981px;
+	margin:10px 0 0 10px;
+	background: #fff;
+	border: 1px solid #ddd;
+	float: left;
+	position: relative;
+}
+
+.product {
+	width:227px;
+	height: 300px;
+	border:1px solid #ddd;
+	margin:11px 0 0 11px;
+	float:left;
+	border-radius:3px;
+}
+.product a
+{
+	text-decoration: none;
+	padding-right:20px;
+	font-family : 'Open sans';
+	color:#333;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 15px;
+	float: right;
+}
+.discription a:hover
+{
+	text-decoration: underline;
+	color:#555;
+}
+.discription span {
+	font-family : 'Arimo', 'Open sans';
+	color:#555;
+	font-size: 14px;
+	font-weight: normal;
+	padding-left:20px;
+	line-height: 15px;
+	float: left;
+	background: #fff;
+}
+
+.product img.add-cart {
+	width:28px;
+	height: 28px;
+	display: block;
+	cursor:pointer;
+	margin:10px 35px  0 0;
+	float:right;
+
+}
+
+.product form {
+	line-height: 50px;
+}
+
+.product form select {
+	margin-left:20px;
+	font-family : 'Arimo', 'Open sans';
+	color:#555;
+	font-size: 12px;
+	font-weight: normal;
+	border-radius:3px;
+	border: 1px solid #bebebe;
+}
+
+.circles1, .circles2 {
+min-width: 10px;
+height: 11px;
+margin: auto;
+}
+.circles1 span, .circles2 span{
+	width:7px;
+	display: block;
+	height: 7px;
+	border-radius: 4px;
+	background: #555;
+	float: left;
+	margin: 8px 1px;
+	cursor: pointer;
+}
+
+.circles1 span.selected, .circles2 span.selected {
+	background: #bebebe;
+}
+.sale-product {
+	width:197px;
+	height:290px;
+	border:1px solid #ddd;
+	margin: 11px auto;
+	border-radius:3px;
+	position: relative;
+}
+
+.sale-product a {
+	text-decoration: none;
+	padding-right:20px;
+	font-family : 'Open sans';
+	color:#333;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 15px;
+	float: right;
+}
+.sale-product img.add-cart {
+	width:28px;
+	height: 28px;
+	display: block;
+	cursor:pointer;
+	margin:10px 35px  0 0;
+	float:right;
+
+}
+
+.sale-product form {
+	line-height: 50px;
+}
+
+.sale-product form select {
+	margin-left:20px;
+	font-family : 'Arimo', 'Open sans';
+	color:#555;
+	font-size: 12px;
+	font-weight: normal;
+	border-radius:3px;
+	border: 1px solid #bebebe;
+}
+.discount {
+	position: absolute;
+	display: block;
+	top:10px;
+	left:10px;
+	background: rgba(255,0,0,.75);
+	width: 50px;
+	height: 50px;
+	border-radius:25px;
+	line-height: 50px;
+	font-family :'Open sans';
+	font-size: 18px;
+	color:#fff;
+	text-align: center;
+}
+.new-price {
+	display: block;
+	height: 30px;
+	width:60%;
+	margin:auto;
+	line-height: 30px;
+	font-family :  'Open sans';
+	font-size: 18px;
+	color:#fff;
+	text-align: center;
+	border-radius: 3px;
+	margin-top:25px;
+	background: rgba(255,0,0,.75);
+}
+.right-wrap {
+	width: 18%;
+	min-height: 450px;
+	margin: -42px 0 0 10px;
+	float:left;
+}
+
+#top-sales {
+	width :220px;
+	height:368px;
+	background: #fff;
+	border: 1px solid #ddd;
+	margin-top:10px;
+}
+
+#sale {
+	width :220px;
+	background: #fff;
+	border: 1px solid #ddd;
+}
+
+#filter span {
+	display: block;
+	width: 100%;
+	height: 40px;
+	border-bottom: 1px solid #bebebe;
+	background: #f3f3f3;
+}
+#filter span img {
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin: 8px 10px 0 11px;
+}
+
+#filter span p {
+	text-align: left;
+	line-height: 40px;
+	font-family : 'Arimo', 'Open sans';
+	color:#555;
+	font-size: 16px;
+	font-weight: normal;
+}
+#filter form p {
+	width:100%;
+	height:25px;
+	text-align: left;
+	line-height: 25px;
+	font-family : 'Open sans';
+	color:#555;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 0 12px;
+}
+#filter form select {
+	margin-left: 27px;
+	font-family : 'Arimo', 'Open sans';
+	color:#555;
+	font-size: 12px;
+	font-weight: normal;
+	border-radius:3px;
+	border: 1px solid #bebebe;
+}
+
+#filter form input {
+	margin-left:27px;
+}
+#price span:first-child {
+	margin-left: 22px
+}
+#price span:nth-child(2n+1) {
+	float:left;
+	width:20px;
+	height: 20px;
+	line-height: 20px;
+	background: #fff;
+	border-bottom: none;
+	font-family :'Open sans', sans-serif;
+	color:#555;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 0 5px;
+}
+#price span:nth-child(2n) {
+	float:left;
+	width:auto;
+	height: 20px;
+	line-height: 20px;
+	background: #fff;
+	border-bottom: none;
+	font-family : 'Arimo', 'Open sans';
+	color:#555;
+	font-size: 14px;
+	font-weight: normal;
+	padding: 0 5px;
+}
+
+#filter-but {
+	width:100px;
+	height:30px;
+	margin: auto;
+	border: 1px solid #bebebe;
+	background: #f3f3f3;
+	margin-top: 30px;
+	text-align: center;
+	line-height: 30px;
+	font-family : 'Open sans', sans-serif;
+	color:#555;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 3px;
+}
+
+#top-sales span img {
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin: 8px 10px 0 11px;
+}
+
+#top-sales span p {
+	text-align: left;
+	line-height: 40px;
+	font-family : 'Arimo', 'Open sans';
+	color:#555;
+	font-size: 16px;
+}
+.topic {
+	display: block;
+	width: 100%;
+	height: 40px;
+	border-bottom: 1px solid #bebebe;
+	background: #f3f3f3;
+}
+#sale span img {
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin: 8px 10px 0 11px;
+}
+
+#sale span p {
+	text-align: left;
+	line-height: 40px;
+	font-family : 'Arimo', 'Open sans';
+	color:#555;
+	font-size: 16px;
+}
+
+#pages {
+	width:100%;
+	height: 30px;
+	float: none;
+	position: absolute;
+	bottom: 0;
+}
+
+#pages span {
+	width:20px;
+	display: block;
+	height: 20px;
+	border-radius: 10px;
+	background: #fff;
+	float: left;
+	margin: 0 1px;
+	cursor: pointer;
+	color:#555;
+	text-align: center;
+	line-height: 20px;
+	font-family: 'Open sans';
+	font-size:12px;
+}
+
+#pages span.selected {
+	color: #fff;
+	background: #333;
+}
+
+footer {
+	width: 1220px;
+	height: 50px;
+	margin: auto;
+	margin-top: 10px;
+	border-top:1px solid #ddd;	
+	border-right:1px solid #ddd;	
+	border-left:1px solid #ddd;
+	bottom: 0;
+	float: left;
+	background: #fff
+}

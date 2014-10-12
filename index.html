@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="main.css">
+	<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+	<script src="js/scripts.js"></script>
+</head>
+<body>
+	<div class="header-wrap">
+		<header>
+			<div id="logo">
+				LOGO
+			</div>
+			<div id="nav-wrap">
+				<div id="info">
+					<div id="phones">
+						<span><i>+375 29 234-56-88</i></span><span>9:00 - 20:00 (пн. - пт.)</span><br>
+						<span><i>+375 29 234-56-88</i></span><span>10:00 - 18:00 (cб.)</span>
+					</div>
+					<div id="search">
+					<form action="">
+						<div id="search-but">Найти</div>
+						<input type="text" value="Искать в каталоге...">
+					</form>
+					</div>
+				</div>
+				<nav>
+					<ul>
+						<li>
+							<a href="#">Контакты</a>
+							<a href="#">Доставка</a>
+							<a href="#">Гарантии</a>
+							<a href="#">О нас</a>
+							<a href="#">Корзина</a>
+						</li>
+					</ul>
+				</nav>
+				<div id="zakaz">Матрас на заказ</div>
+			</div>
+			<div id="cart-wrap">
+				<div id="cart">
+					<img src="img/cart.png" alt="">
+					<span class="product-counter">0</span>
+					<span class="order-but">Оформить заказ</span>
+					<span class="clear-cart">Очистить корзину</span>
+				</div>
+			</div>
+			
+		</header>	
+	</div>
+	<div class="content-wrap">
+		<div id="filter">
+			<span class="topic">
+				<img src="img/idea.png" alt="">
+				<p>Подобрать матрас</p>
+			</span>
+			<form action="">
+				<p>Выбрать колекцию</p>
+				<select name="collection">
+				  	<option selected>Все коллекции</option>
+				  	<option>Звездная коллекция</option>
+				  	<option>Элит колекция</option>
+				  	<option>Колекция VITABLUE</option> 
+				</select>
+				<p>Модель</p>
+				<select name="collection">
+				  	<option selected>Все коллекции</option>
+				  	<option>Звездная коллекция</option>
+				  	<option>Элит колекция</option>
+				  	<option>Колекция VITABLUE</option> 
+				</select>
+				<p>Размер</p>
+				<select name="collection">
+				  	<option selected>1</option>
+				  	<option>2</option>
+				  	<option>3</option>
+				  	<option>4</option> 
+				</select>
+				<p>Жесткость</p>
+				<select name="collection">
+				  	<option selected>Все коллекции</option>
+				  	<option>Звездная коллекция</option>
+				  	<option>Элит колекция</option>
+				  	<option>Колекция VITABLUE</option> 
+				</select>
+				<p>Высота</p>
+				<select name="collection">
+				  	<option selected>Все коллекции</option>
+				  	<option>Звездная коллекция</option>
+				  	<option>Элит колекция</option>
+				  	<option>Колекция VITABLUE</option> 
+				</select>
+				<p>Пружинный блок</p>
+				<select name="collection">
+				  	<option selected>Все коллекции</option>
+				  	<option>Звездная коллекция</option>
+				  	<option>Элит колекция</option>
+				  	<option>Колекция VITABLUE</option> 
+				</select>
+				<p>Цена</p>
+				<input id="price-range" type="range" name="trackbar" min="0" max="10000000" step="100000"/>
+				<div id="price">
+					<span>От</span>
+					<span>0р.</span>
+					<span>До</span>
+					<span id="upper-bound-price"></span>
+				</div>
+			</form>
+			<div id="filter-but">Подобрать</div>
+		</div>
+		<div id="sort">
+			<form action="">
+				<span>Сортировать</span>
+				<select name="collection">
+				  	<option selected>Не выбрано</option>
+				  	<option>по цене(убыванию)</option>
+				  	<option>по цене(возрастанию)</option>
+				  	<option>по коллекции</option> 
+				</select>
+			</form>
+			<img src="img/list.png" alt="">
+			<img src="img/grid.png" alt="">
+		</div>
+		<div id="catalog">
+			<div class="product">
+				<img src="img/adonis.jpg" alt="">
+				<div class="discription">
+					
+					<span>1 500 000р.</span>
+					<a href="#">Адонис</a>
+				</div>
+				
+				<img class="add-cart" src="img/addcart.png" alt="">
+				<form action="">
+					<select name="collection">
+				  	<option selected>Размер</option>
+				  	<option>98x100</option>
+				  	<option>98x100</option>
+				  	<option>98x100</option> 
+				</select>
+				</form>
+			</div>
+			<div class="product">
+				<img src="img/adonis.jpg" alt="">
+				<div class="discription">
+					
+					<span>1 500 000р.</span>
+					<a href="#">Адонис</a>
+				</div>
+				
+				<img class="add-cart" src="img/addcart.png" alt="">
+				<form action="">
+					<select name="collection">
+				  	<option selected>Размер</option>
+				  	<option>98x100</option>
+				  	<option>98x100</option>
+				  	<option>98x100</option> 
+				</select>
+				</form>
+				
+			</div>
+			<div class="product">
+				<img src="img/adonis.jpg" alt="">
+				<div class="discription">
+					
+					<span>1 500 000р.</span>
+					<a href="#">Адонис</a>
+				</div>
+				
+				<img class="add-cart" src="img/addcart.png" alt="">
+				<form action="">
+					<select name="collection">
+				  	<option selected>Размер</option>
+				  	<option>98x100</option>
+				  	<option>98x100</option>
+				  	<option>98x100</option> 
+				</select>
+				</form>
+				
+			</div>
+			<div class="product">
+				<img src="img/adonis.jpg" alt="">
+				<div class="discription">
+					
+					<span>1 500 000р.</span>
+					<a href="#">Адонис</a>
+				</div>
+				
+				<img class="add-cart" src="img/addcart.png" alt="">
+				<form action="">
+					<select name="collection">
+				  	<option selected>Размер</option>
+				  	<option>98x100</option>
+				  	<option>98x100</option>
+				  	<option>98x100</option> 
+				</select>
+				</form>
+				
+			</div>
+			<div class="product">
+				<img src="img/adonis.jpg" alt="">
+				<div class="discription">
+					
+					<span>1 500 000р.</span>
+					<a href="#">Адонис</a>
+				</div>
+				
+				<img class="add-cart" src="img/addcart.png" alt="">
+				<form action="">
+					<select name="collection">
+				  	<option selected>Размер</option>
+				  	<option>98x100</option>
+				  	<option>98x100</option>
+				  	<option>98x100</option> 
+				</select>
+				</form>
+				
+			</div>
+			<div class="product">
+				<img src="img/adonis.jpg" alt="">
+				<div class="discription">
+					
+					<span>1 500 000р.</span>
+					<a href="#">Адонис</a>
+				</div>
+				
+				<img class="add-cart" src="img/addcart.png" alt="">
+				<form action="">
+					<select name="collection">
+				  	<option selected>Размер</option>
+				  	<option>98x100</option>
+				  	<option>98x100</option>
+				  	<option>98x100</option> 
+				</select>
+				</form>
+				
+			</div>
+			<div class="product">
+				<img src="img/adonis.jpg" alt="">
+				<div class="discription">
+					
+					<span>1 500 000р.</span>
+					<a href="#">Адонис</a>
+				</div>
+				
+				<img class="add-cart" src="img/addcart.png" alt="">
+				<form action="">
+					<select name="collection">
+				  	<option selected>Размер</option>
+				  	<option>98x100</option>
+				  	<option>98x100</option>
+				  	<option>98x100</option> 
+				</select>
+				</form>
+				
+			</div>
+			<div class="product">
+				<img src="img/adonis.jpg" alt="">
+				<div class="discription">
+					
+					<span>1 500 000р.</span>
+					<a href="#">Адонис</a>
+				</div>
+				
+				<img class="add-cart" src="img/addcart.png" alt="">
+				<form action="">
+					<select name="collection">
+				  	<option selected>Размер</option>
+				  	<option>98x100</option>
+				  	<option>98x100</option>
+				  	<option>98x100</option> 
+				</select>
+				</form>
+				
+			</div>
+			<div class="product">
+				<img src="img/adonis.jpg" alt="">
+				<div class="discription">
+					
+					<span>1 500 000р.</span>
+					<a href="#">Адонис</a>
+				</div>
+				
+				<img class="add-cart" src="img/addcart.png" alt="">
+				<form action="">
+					<select name="collection">
+				  	<option selected>Размер</option>
+				  	<option>98x100</option>
+				  	<option>98x100</option>
+				  	<option>98x100</option> 
+				</select>
+				</form>
+				
+			</div>
+			<div id="pages">
+				<span class="selected">1</span>
+				<span>2</span>
+				<span>3</span>
+				<span>4</span>
+			</div>
+		</div>
+		<div class="right-wrap">
+			<div id="sale">
+				<span class="topic">
+				<img src="img/sale.png" alt="">
+				<p>Скиди и акции</p>
+				</span>
+				<div class="circles1">
+					<span class="selected first"></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="sale-product">
+					<img src="img/adonis-sale.jpg" alt="">
+					<div class="discription">
+					<br>
+					<span><strike>1 500 000р.</strike></span>
+					<a href="#">Адонис</a>
+				</div>
+				<span class="discount">70%</span>
+				<span class="new-price">450 000р.</span>
+				</div>
+			</div>	
+			<div id="top-sales">
+					<span class="topic">
+					<img src="img/price.png" alt="">
+					<p>Выбор покупателей</p>
+					</span>
+					<div class="circles2">
+						<span class="selected first"></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class="sale-product">
+						<img src="img/adonis-sale.jpg" alt="">
+						<div class="discription">
+							<br>
+							<span>1 500 000р.</span>
+							<a href="#">Адонис</a>
+						</div>
+						<img class="add-cart" src="img/addcart.png" alt="">
+						<form action="">
+							<select name="collection">
+						  	<option selected>Размер</option>
+						  	<option>98x100</option>
+						  	<option>98x100</option>
+						  	<option>98x100</option> 
+						</select>
+						</form>
+					</div>
+		</div>
+	</div>
+		<footer>
+			
+		</footer>
+</body>
+</html>
